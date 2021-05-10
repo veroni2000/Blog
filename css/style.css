@@ -1,0 +1,164 @@
+body {
+	font: 18px Arial;
+}
+h1 {
+	font-size: 26px;
+}
+/*nav*/
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+li {
+	display: inline;
+	float: left;
+	border-right:1px solid #bbb;
+}
+li:last-child {
+	border-right: none;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: #111;
+}
+.active {
+	background-color: #4CAF50;
+}
+/**/
+main {
+	margin-top: 60px;
+}
+/*links*/
+a {
+	color:#4CAF50;
+	text-decoration:none; 
+}
+a:hover { 
+	text-decoration:underline; 
+}
+/*forms*/
+form {
+	border: 3px solid #4CAF50;
+	padding: 30px;
+}
+.LoginRegister {
+	margin-top: 50px;
+	width: 40%;
+	margin-left: 30%;
+}
+#editUser form {
+	margin: 30px 5%;
+	display: inline-block;
+	padding: 30px 2%;
+}
+#formEditPost {
+	margin: 30px 5%;
+	padding: 30px;
+}
+#formNewPost {
+	margin: 5px 0px;
+}
+/*form inputs*/
+input[type=text],input[type=email],input[type=file], input[type=password], textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 12px 20px;
+	margin: 8px 0;	
+}
+#formNewPost input[type=text], #formEditPost input[type=text] {
+	width: 30%;
+	margin-right: 70%;
+}
+.LoginRegister button, #editUser button {
+	width: 100%;
+	padding: 14px 20px;
+}
+#formEditPost button, #formNewPost button {
+	width: 30%;
+}
+/*form buttons*/
+#formNewComment button {
+	width: 20%;
+}
+/*buttons*/
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 15px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+}
+/*profile*/
+#divProfile img {
+	display: inline-block;
+	width: 15%;
+}
+#divProfile p {
+	display: inline-block;
+	width: 80%;
+	margin-left: 3%;
+}
+#profilePic {
+	vertical-align: middle;
+	border-radius: 50%;
+	object-fit: cover;
+}
+#PicUsername img, p {
+	display: inline-block;
+}
+#divProfile, #divPost {
+	display: block;
+	border: 3px solid #4CAF50;
+	padding: 20px;
+}
+/*posts*/
+#divPostsIndex {
+	display: block;
+	border: 3px solid #AECDAF;
+	padding: 20px;
+	margin: 20px;
+}
+#divPostsIndex a, div {
+	display: inline-block;
+}
+#postTime {
+	font-size: 15px;
+}
+#postTime, #commentTime {
+	display: block;
+}
+/*comments*/
+#commentTime {
+	font-size: 12px;
+}
+#divComment {
+	display: block;
+	border: 3px solid #AECDAF;
+	width: 80%;
+	padding: 20px;
+	margin: 20px;
+}
+#divEditDelete {
+	float: right;
+}
+#warning {
+	margin-left: 30%;
+	color: red;
+}
